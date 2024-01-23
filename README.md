@@ -1,9 +1,16 @@
 # SALES-INSIGHTS-ATLIQ-TECHNOLOGIES
 INTERACTIVE TABLEAU DASHBOARD WITH REVENUE AND PROFIT ANALYSIS
-Tableau Profile Link : https://public.tableau.com/app/profile/sruthy4417/viz/SALESINSIGHTSATLIQHARDWARE/PROFITANALYSIS
+Tableau Profile Link: https://public.tableau.com/app/profile/sruthy4417/viz/SALESINSIGHTSATLIQHARDWARE/PROFITANALYSIS
 
 # OBJECTIVE :
-# DATA ANALYSIS USING SQL
+  
+  Atliq Hardware faces a sales decline. The Sales Director wishes to develop interactive, visualized insights, fostering adaptability and informed decision-making for strategic market navigation.
+
+# PROJECT PLANNING AND DATA DISCOVERY
+
+   AIMS GRID method is followed to define the purpose and success criteria for the project.
+
+# DATA ANALYSIS USING MySQL
 
 1) To show all customer records
 
@@ -67,6 +74,29 @@ Tableau Profile Link : https://public.tableau.com/app/profile/sruthy4417/viz/SAL
     ALTER TABLE sales.transactions
     CHANGE profit_margin_percentage PROFIT_MARGIN double
 
+# DATA CLEANING , ETL & VISUALIZATION USING TABLEAU
+
 
 ![REVENUE ANALYSIS](https://github.com/Sruthyuday/SALES-INSIGHTS-ATLIQ-TECHNOLOGIES/assets/142775795/dea948c2-ab77-4f4e-af2a-1bae9f8b3123)
-![PROFIT ANALYSIS](https://github.com/Sruthyuday/SALES-INSIGHTS-ATLIQ-TECHNOLOGIES/assets/142775795/92c6758a-730b-4b96-8996-987180c5f78a)
+
+# KEY INSIGHTS FROM REVENUE ANALYSIS
+  (1) Total Sales Revenue
+  (2) Total Sales Quantity
+  (3) Revenue by markets
+  (4) Top 5 Customers by sales revenue
+  (5) Top 5 Products by sales revenue
+  (6) Sales Qty by Market
+  (7) Sales Revenue by Year
+  
+![PROFIT ANALYSIS](https://github.com/Sruthyuday/SALES-INSIGHTS-ATLIQ-TECHNOLOGIES/assets/142775795/070f3ed6-7ceb-405c-8d5b-dd22e3f428ab)
+
+
+# KEY INSIGHTS FROM PROFIT ANALYSIS
+
+(1) Total PROFIT
+(2) Revenue % contribution by markets
+(3) Revenue % by Customer Type
+(4) Profit margin by markets
+(5) Customer Table with Sales Revenue, Sales Profit and Profit Margin values.
+
+  
