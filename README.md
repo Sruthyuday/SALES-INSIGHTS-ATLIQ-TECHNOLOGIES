@@ -6,16 +6,20 @@ Tableau Profile Link : https://public.tableau.com/app/profile/sruthy4417/viz/SAL
 # DATA ANALYSIS USING SQL
 
 1) To show all customer records
+
    SELECT * FROM sales.customers;
    
 2) Show the total number of customers
+
    SELECT count(*) FROM sales.customers;
 
 3) Show transactions for the Chennai market (market code for chennai is Mark001)
+
    SELECT * FROM sales.transactions
    WHERE market_code= 'Mark001';
    
 4) Show distinct product codes that were sold in chennai
+
    SELECT distinct(product_code)
    FROM sales.transactions
    WHERE market_code= "Mark001";
