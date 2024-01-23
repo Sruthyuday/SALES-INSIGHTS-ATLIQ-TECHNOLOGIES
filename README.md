@@ -56,6 +56,17 @@ Tableau Profile Link : https://public.tableau.com/app/profile/sruthy4417/viz/SAL
     ON transactions.order_date = date.date
     WHERE transactions.market_code='Mark001' and date.year='2020';
 
+10) To show the table and alter the column name profit_margin to PROFIT
+
+    DESCRIBE sales.transactions;
+    ALTER TABLE sales.transactions
+    CHANGE profit_margin PROFIT double
+
+11) To alter the table name profit_margin_percentage to PROFIT_MARGIN
+
+    ALTER TABLE sales.transactions
+    CHANGE profit_margin_percentage PROFIT_MARGIN double
+
 
 ![REVENUE ANALYSIS](https://github.com/Sruthyuday/SALES-INSIGHTS-ATLIQ-TECHNOLOGIES/assets/142775795/dea948c2-ab77-4f4e-af2a-1bae9f8b3123)
 ![PROFIT ANALYSIS](https://github.com/Sruthyuday/SALES-INSIGHTS-ATLIQ-TECHNOLOGIES/assets/142775795/92c6758a-730b-4b96-8996-987180c5f78a)
