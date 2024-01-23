@@ -37,12 +37,24 @@ Tableau Profile Link : https://public.tableau.com/app/profile/sruthy4417/viz/SAL
 
 7) Show total revenue in year 2020
 
-  SELECT sum(sales.transactions.sales_amount)
-  FROM sales.transactions INNER JOIN sales.date
-  ON transactions.order_date=date.date WHERE date.year=2020
-  AND sales.transactions.currency = 'INR' or sales.transactions.currency = 'USD';
+   SELECT sum(sales.transactions.sales_amount)
+   FROM sales.transactions INNER JOIN sales.date
+   ON transactions.order_date=date.date WHERE date.year=2020
+   AND sales.transactions.currency = 'INR' or sales.transactions.currency = 'USD';
 
 8) Show total revenue in year 2020, January Month
+
+   SELECT sum(sales.transactions.sales_amount)
+   FROM sales.transactions INNER JOIN sales.date
+   ON transactions.order_date=date.date WHERE date.year=2020 and date.month_name= "January"
+   AND (sales.transactions.currency = 'INR' or sales.transactions.currency = 'USD');
+
+9) Show total revenue in year 2020 in Chennai
+
+    SELECT sum(sales.transactions.sales_amount)
+    FROM sales.transactions INNER JOIN sales.date
+    ON transactions.order_date = date.date
+    WHERE transactions.market_code='Mark001' and date.year='2020';
 
 
 ![REVENUE ANALYSIS](https://github.com/Sruthyuday/SALES-INSIGHTS-ATLIQ-TECHNOLOGIES/assets/142775795/dea948c2-ab77-4f4e-af2a-1bae9f8b3123)
